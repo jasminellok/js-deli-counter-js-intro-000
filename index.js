@@ -19,7 +19,7 @@ function currentLine(line) {
     return "The line is currently empty."
   } else {
     for (let i=0; i<line.length; i+=1) {
-      listCustomer += `${i+1}. ${line[i]} `
+      listCustomer += `${i+1}. ${line[i]}, `
     }
   }
   return listCustomer
