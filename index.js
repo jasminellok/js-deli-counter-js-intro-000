@@ -21,7 +21,7 @@ function currentLine(line) {
     for (let i=0; i<(line.length-1); i+=1) {
       listCustomer += `${i+1}. ${line[i]}, `
     }
-    listCustomer += `${line.length}. ${line[-1]}`
+    listCustomer += `${line.length}. ${line.slice[-1]}`
   }
   return listCustomer
 }
