@@ -12,3 +12,15 @@ function nowServing(line) {
     return `Currently serving ${nowServing}.`
   }
 }
+
+function currentLine(line) {
+  var listCustomer = "The line is currently: "
+  if (line.length===0) {
+    return "The line is currently empty."
+  } else {
+    for (i=0; i<=line.length; i+=1) {
+      listCustomer += `${i}. ${line[i]}`
+    }
+  }
+  return listCustomer
+}
